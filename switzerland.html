@@ -1,25 +1,8 @@
 ---
-
+layout: gallery
+title: Switzerland (2013)
+images:
+  count: 25
+  folder: switzerland
+  filename: switzerland
 ---
-
-{% include header.html %}
-
-{% include lightbox.html %}
-
-<h1>Switzerland (2013)</h1>
-
-<section id="gallery">
-<div class="thumbnails centered photos">
-  <ul>
-    {% for i in (1..25) %}
-      <li>
-        <a href="/images/switzerland/switzerland-{{i}}.jpg" rel="lightbox[glo]">
-          <img src="/images/switzerland/th-switzerland-{{i}}.jpg"}}/>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-</section>
-
-{% include footer.html %}

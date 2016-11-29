@@ -1,25 +1,8 @@
 ---
-
+layout: gallery
+title: England (2013)
+images:
+  count: 11
+  folder: england
+  filename: england
 ---
-
-{% include header.html %}
-
-{% include lightbox.html %}
-
-<h1>England (2013)</h1>
-
-<section id="gallery">
-<div class="thumbnails centered photos">
-  <ul>
-    {% for i in (1..11) %}
-      <li>
-        <a href="/images/england/england-{{i}}.jpg" rel="lightbox[glo]">
-          <img src="/images/england/th-england-{{i}}.jpg"}}/>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-</section>
-
-{% include footer.html %}

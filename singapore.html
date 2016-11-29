@@ -1,25 +1,8 @@
 ---
-
+layout: gallery
+title: Singapore (2013)
+images:
+  count: 8
+  folder: singapore
+  filename: singapore
 ---
-
-{% include header.html %}
-
-{% include lightbox.html %}
-
-<h1>Singapore (2013)</h1>
-
-<section id="gallery">
-<div class="thumbnails centered photos">
-  <ul>
-    {% for i in (1..8) %}
-      <li>
-        <a href="/images/singapore/singapore-{{i}}.jpg" rel="lightbox[glo]">
-          <img src="/images/singapore/th-singapore-{{i}}.jpg"}}/>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-</section>
-
-{% include footer.html %}

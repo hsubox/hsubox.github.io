@@ -1,25 +1,8 @@
 ---
-
+layout: gallery
+title: Seabrook, NH (2010)
+images:
+  count: 10
+  folder: seabrook
+  filename: seabrook
 ---
-
-{% include header.html %}
-
-{% include lightbox.html %}
-
-<h1>Seabrook, NH (2010)</h1>
-
-<section id="gallery">
-<div class="thumbnails centered photos">
-  <ul>
-    {% for i in (1..10) %}
-      <li>
-        <a href="/images/seabrook/seabrook-{{i}}.jpg" rel="lightbox[glo]">
-          <img src="/images/seabrook/th-seabrook-{{i}}.jpg"}}/>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-</section>
-
-{% include footer.html %}

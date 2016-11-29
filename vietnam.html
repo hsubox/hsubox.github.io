@@ -1,25 +1,8 @@
 ---
-
+layout: gallery
+title: Vietnam (2012)
+images:
+  count: 14
+  folder: vietnam
+  filename: vietnam
 ---
-
-{% include header.html %}
-
-{% include lightbox.html %}
-
-<h1>Vietnam (2012)</h1>
-
-<section id="gallery">
-<div class="thumbnails centered photos">
-  <ul>
-    {% for i in (1..14) %}
-      <li>
-        <a href="/images/vietnam/vietnam-{{i}}.jpg" rel="lightbox[glo]">
-          <img src="/images/vietnam/th-vietnam-{{i}}.jpg"}}/>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-</section>
-
-{% include footer.html %}

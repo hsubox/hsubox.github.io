@@ -1,25 +1,8 @@
 ---
-
+layout: gallery
+title: Apostle Islands (2015)
+images:
+  count: 25
+  folder: bayfield
+  filename: bayfield
 ---
-
-{% include header.html %}
-
-{% include lightbox.html %}
-
-<h1>Apostle Islands (2015)</h1>
-
-<section id="gallery">
-<div class="thumbnails centered photos">
-  <ul>
-    {% for i in (1..25) %}
-      <li>
-        <a href="/images/bayfield/bayfield-{{i}}.jpg" rel="lightbox[glo]">
-          <img src="/images/bayfield/th-bayfield-{{i}}.jpg"}}/>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-</section>
-
-{% include footer.html %}

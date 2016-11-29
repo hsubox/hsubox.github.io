@@ -1,25 +1,8 @@
 ---
-
+layout: gallery
+title: Amsterdam Brussels Bruges (2013)
+images:
+  count: 7
+  folder: amsterdam
+  filename: amsterdam
 ---
-
-{% include header.html %}
-
-{% include lightbox.html %}
-
-<h1>Amsterdam Brussels Bruges (2013)</h1>
-
-<section id="gallery">
-<div class="thumbnails centered photos">
-<ul>
-  {% for i in (1..7) %}
-    <li>
-      <a href="/images/amsterdam/amsterdam-{{i}}.jpg" rel="lightbox[glo]">
-        <img src="/images/amsterdam/th-amsterdam-{{i}}.jpg"}}/>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
-</div>
-</section>
-
-{% include footer.html %}
