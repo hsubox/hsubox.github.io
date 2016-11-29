@@ -37,8 +37,6 @@ d3.json("https://gist.githubusercontent.com/hsubox/58121014d2447aa241847cdb83987
   d3.json("https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json", function(error, data) {
     if (error) throw error;
 
-    console.log(data);
-
     var const_factor = 10; // use this constant factor so that points appear more uniform in size
     var scale = d3.scaleLog()
     .domain([1, d3.max(data.features, function(d) { return d.properties.mass; })])
