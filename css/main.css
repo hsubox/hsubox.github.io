@@ -55,7 +55,7 @@ a:hover {
 HEADING
 ***************/
 
-header {
+#page-header {
 	position: relative;
 	top: 0px;
 	margin: 30px 0px 0px;
@@ -190,7 +190,7 @@ FOR TABLET DISPLAYS
 
 @media screen and (min-width: 480px) {
 
-	header {
+	#page-header {
 		position: fixed;
 	}
 
