@@ -1,0 +1,25 @@
+---
+
+---
+
+{% include header.html %}
+
+{% include lightbox.html %}
+
+<h1>Montreal - Ontario - Thousand Islands - Niagara Falls - Toronto - Chicago - Milwaukee - Madison (2014)</h1>
+
+<section id="gallery">
+<div class="thumbnails centered photos">
+  <ul>
+    {% for i in (1..31) %}
+      <li>
+        <a href="/images/roadtrip-2014/roadtrip-2014-{{i}}.jpg" rel="lightbox[glo]">
+          <img src="/images/roadtrip-2014/th-roadtrip-2014-{{i}}.jpg"}}/>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+</section>
+
+{% include footer.html %}
