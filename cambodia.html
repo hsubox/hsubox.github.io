@@ -1,0 +1,27 @@
+---
+
+---
+
+{% include header.html %}
+
+{% include lightbox.html %}
+
+<h1>Cambodia (2012)</h1>
+
+<section id="gallery">
+<div class="thumbnails centered photos">
+
+<ul>
+  {% for i in (1..14) %}
+    <li>
+      <a href="/images/cambodia/cambodia-{{i}}.jpg" rel="lightbox[glo]">
+        <img src="/images/cambodia/th-cambodia-{{i}}.jpg"}}/>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+</div>
+</section>
+
+{% include footer.html %}
