@@ -1,0 +1,29 @@
+#d3 {
+  width: 700px;
+  margin: 0 auto;
+  background-color: #D4FFF4;
+}
+
+.links line {
+  stroke: #85CC82;
+}
+
+.nodes circle {
+  pointer-events: all;
+  fill: #2E7F2B;
+  stroke: none;
+  stroke-width: 40px;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 70px;
+  font: 0.7em sans-serif;
+  text-align: center;
+  padding: 5px;
+  background: rgba(128, 128, 128, 0.2);
+  pointer-events: none;
+  visibility: hidden;
+}

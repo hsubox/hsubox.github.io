@@ -1,0 +1,24 @@
+.bar {
+  fill: slateblue;
+}
+.selected .bar {
+  fill: indigo;
+}
+.y-label {
+  font-size: 0.7em;
+  fill: black;
+}
+.selected .tooltip-g {
+  visibility: visible;
+}
+.unselected .tooltip-g {
+  visibility: hidden;
+}
+.tooltip-g {
+  fill: darkturquoise;
+}
+.tooltip {
+  z-index: -1000;
+  font-size: 0.5em;
+  fill: indigo;
+}

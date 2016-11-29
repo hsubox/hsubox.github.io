@@ -1,0 +1,22 @@
+.axis path,
+.axis line {
+  stroke: none;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font: 0.75em sans-serif;
+}
+.rect:hover {
+  stroke: grey;
+}
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  font: 0.4em sans-serif;
+  text-align: center;
+  padding: 2px;
+  background: rgba(128, 128, 128, 0.2);
+  pointer-events: none;
+}
