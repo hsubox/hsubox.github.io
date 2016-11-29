@@ -1,0 +1,27 @@
+---
+
+---
+
+{% include header.html %}
+
+<script src="js/prototype.js" type="text/javascript"></script>
+<script src="js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
+<script src="js/lightbox.js" type="text/javascript"></script>
+
+<h1>Apostle Islands (2015)</h1>
+
+<section id="gallery">
+<div class="thumbnails centered photos">
+  <ul>
+    {% for i in (1..25) %}
+      <li>
+        <a href="/images/Bayfield/Bayfield-{{i}}.jpg" rel="lightbox[glo]">
+          <img src="/images/Bayfield/th-Bayfield-{{i}}.jpg"}}/>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+</section>
+
+{% include footer.html %}
