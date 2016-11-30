@@ -29,7 +29,6 @@ body {
 .flash {
 	height: 200px;
 	width: 225px;
-
 }
 
 a, a:visited {
@@ -45,6 +44,18 @@ a:hover {
 
 .centered {
 	text-align:center;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.large {
+	font-size: 1.4em;
 }
 
 .line {
@@ -155,6 +166,11 @@ PAGE: ABOUT
 	display: block;
 	clear: both;
 	padding: 0;
+	margin: 0px auto;
+}
+
+.description {
+	max-width: 450px;
 	margin: 0px auto;
 }
 
