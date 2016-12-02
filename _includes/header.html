@@ -1,9 +1,16 @@
 <header id="page-header">
 	<nav>
-		<span class="bold">{{ site.name }}</span> ::
-		<a href="/">Projects</a> ::
-		<a href="/blog/">Blog</a> ::
-		<a href="/about/">About Me</a> ::
-		<a href="/resume/">Resume</a>
+		<span id="my-name" class="bold">{{ site.name }}</span> ::
+		<span><div class="dropdown">
+		  <a href="/" class="dropbtn">Projects</a>
+		  <div class="dropdown-content">
+				<a href="/tech/">Tech</a>
+				<a href="/design/">Design</a>
+				<a href="/photography/">Photography</a>
+		  </div>
+		</div></span> ::
+		<span><a href="/blog/">Blog</a></span> ::
+		<span><a href="/about/">About Me</a></span> ::
+		<span><a href="/resume/">Resume</a></span>
 	</nav>
 </header>

@@ -108,10 +108,38 @@ nav {
 	display: block;
 	margin: 0;
 	padding: 2px 2px;
+	margin: 0px 50px;
 }
 
-nav a {
+nav a, nav #title {
 	padding: 10px 10px;
+}
+
+.dropbtn {
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+		top: 31px;
+    background-color: #f9f9f9;
+    min-width: 50px;
+		border: 1px solid #000000;
+}
+
+.dropdown-content a {
+    display: block;
+		text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /***************
