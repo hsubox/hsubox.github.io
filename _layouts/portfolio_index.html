@@ -10,13 +10,21 @@ layout: default
 
   <section id="gallery">
   	<ul>
-    {% for item in site.portfolio %}
-      <li class="{{ item.tags | join:" " }}">
-  			<a href="{{ item.url | relative_url }}">
-  				<img class="spaced" src="{{ item.thumbnail }}" alt="{{ item.title | escape }}"/>
-  			</a>
-  		</li>
-    {% endfor %}
+
+      {% assign items = site.portfolio | sort: "key", "first" | reverse %}
+      {% if page.filters %}
+        {% for filter in page.filters %}
+          {% assign items = items | where: "tags", filter %}
+        {% endfor %}
+      {% endif %}
+
+      {% for item in items %}
+        <li class="{{ item.tags | join:" " }}">
+    			<a href="{{ item.url | relative_url }}">
+    				<img class="spaced" src="{{ item.thumbnail }}" alt="{{ item.title | escape }}"/>
+    			</a>
+    		</li>
+      {% endfor %}
     </ul>
   </section>
 
