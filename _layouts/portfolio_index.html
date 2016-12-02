@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">{{ page.title }}</h1>
+
+  {{ content }}
+
+  <section id="gallery">
+  	<ul>
+    {% for item in site.portfolio %}
+      <li class="{{ item.tags }}">
+  			<a href="{{ item.url | relative_url }}">
+  				<img class="spaced" src="{{ item.thumbnail }}" alt="{{ item.title | escape }}"/>
+  			</a>
+  		</li>
+    {% endfor %}
+    </ul>
+  </section>
+
+</div>

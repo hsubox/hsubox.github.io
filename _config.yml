@@ -26,6 +26,11 @@ google_analytics: UA-7494743-2
 # Build settings
 markdown: kramdown
 theme: minima
+collections:
+  portfolio:
+    output: true
+post_tag_dir: post_tag
+portfolio_tag_dir: portfolio_tag
 gems:
   - jekyll-feed
 exclude:
