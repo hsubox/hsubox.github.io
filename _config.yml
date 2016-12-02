@@ -29,8 +29,7 @@ theme: minima
 collections:
   portfolio:
     output: true
-post_tag_dir: post_tag
-portfolio_tag_dir: portfolio_tag
+post_tag_dir: blog_tag
 gems:
   - jekyll-feed
 exclude:
