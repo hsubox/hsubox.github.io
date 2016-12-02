@@ -11,7 +11,7 @@ layout: default
   <section id="gallery">
   	<ul>
     {% for item in site.portfolio %}
-      <li class="{{ item.tags }}">
+      <li class="{{ item.tags | join:" " }}">
   			<a href="{{ item.url | relative_url }}">
   				<img class="spaced" src="{{ item.thumbnail }}" alt="{{ item.title | escape }}"/>
   			</a>
