@@ -18,7 +18,7 @@ d3.json("https://raw.githubusercontent.com/DealPete/forceDirected/master/countri
   if (error) throw error;
 
   // create tooltip div - when node is hovered
-  var tooltip = d3.select(".container").append("div")
+  var tooltip = d3.select("#d3").append("div")
       .attr("class", "tooltip");
 
   // draw links
