@@ -26,7 +26,6 @@ Refer to the official Jeykll documentation for further support: [https://jekyllr
 
 1. Add tags for `_portfolio` items
 2. Add other work from Github
-3. Add other work from Codepen
-4. Migrate old blogs into here
+3. Migrate old blogs into here
 
 This README structure is borrowed from: [http://dpb.bitbucket.org/what-goes-in-a-readme.html](http://dpb.bitbucket.org/what-goes-in-a-readme.html)
