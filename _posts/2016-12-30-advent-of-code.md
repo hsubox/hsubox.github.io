@@ -35,6 +35,7 @@ I wish that I had been more rigorous about writing tests early on. I began to wr
 ## New Concepts And Interesting Applications
 
 From discussion with others and from trying to solve the problems, I encountered a number of new (and interesting!) concepts:
+
 - Assembly language interpretation with op codes and registers
 - Key stretching
 - [Josephus problem](https://en.wikipedia.org/wiki/Josephus_problem)
