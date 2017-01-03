@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The Return Statement"
+author: "Jennifer Hsu"
 date:   2016-12-17 15:02:54 -0500
 categories: recurse_center programming
 ---

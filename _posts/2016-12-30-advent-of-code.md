@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Advent of Code"
+author: "Jennifer Hsu"
 date:   2016-12-30 19:21:54 -0500
 categories: recurse_center programming
 ---
