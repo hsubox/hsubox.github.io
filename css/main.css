@@ -115,10 +115,6 @@ nav a, nav #title {
 	padding: 10px 10px;
 }
 
-.dropbtn {
-    color: white;
-}
-
 .dropdown {
     position: relative;
     display: inline-block;
