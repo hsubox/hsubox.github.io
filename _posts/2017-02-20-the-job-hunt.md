@@ -2,7 +2,7 @@
 layout: post
 title:  "The Job Hunt"
 author: "Jennifer Hsu"
-date:   2016-12-30 20:00:00 -0500
+date:   2017-02-20 20:00:00 -0500
 categories: recurse_center programming jobs
 ---
 
