@@ -1,0 +1,305 @@
+---
+---
+
+/***************
+GENERAL
+***************/
+
+html, body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background:url(../images/background_element.png);
+	min-height: 100vh;
+    background: linear-gradient(to right, #00b09b, #96c93d);
+    color: #ffffff;
+	text-align: center;
+}
+
+#container {
+	width: 80%;
+	max-width: 780px;
+	overflow: auto;
+	margin: 40px auto 50px;
+	padding: 2% 5%;
+	text-align: left;
+}
+
+.flash {
+	height: 200px;
+	width: 225px;
+}
+
+a, a:visited {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+
+a:hover {
+	color: #cccccc;
+	text-decoration: underline;
+}
+
+.centered {
+	text-align:center;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.large {
+	font-size: 1.4em;
+}
+
+.line {
+	clear: left;
+}
+
+/***************
+NAVIGATION
+***************/
+
+.menu.icon {
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 10px;
+    width: 17px;
+    height: 1px;
+    background-color: currentColor;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: 0;
+        width: 17px;
+        height: 1px;
+        background-color: currentColor;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 17px;
+        height: 1px;
+        background-color: currentColor;
+	}
+}
+
+.page-nav__toggle-input:checked ~ .page-nav__toggle-label .menu.icon {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    width: 0px;
+    height: 0px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        width: 21px;
+        height: 1px;
+        background-color: currentColor;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        width: 21px;
+        height: 1px;
+        background-color: currentColor;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+	}
+}
+
+.icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { 
+	transition: all 0.4s ease;
+}
+
+.page-nav {
+    &__menu {
+        display: none;
+        float: right;
+        overflow: hidden;
+        text-align: right;
+    }
+    
+    &__link {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+    
+        &:hover {
+            color: #cccccc;
+        }
+    }
+    
+    &__toggle-input {
+        display: none;
+    
+        &:checked ~ .page-nav__menu {
+            display: inline-block;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+        }
+    }
+    
+    &__toggle-label {
+        cursor: pointer;
+    
+        &--menu {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 20px;
+            right: 20px;
+        }
+    }
+}
+
+/***************
+PAGE: PORTFOLIO
+***************/
+
+#gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#gallery ul {
+	padding: 0;
+}
+
+#gallery li {
+	float: left;
+	width: 95%;
+	margin: 2.5%;
+	color: #333;
+	list-style: none;
+}
+
+#gallery li a p {
+	margin: 0;
+	padding: 5%;
+	font-size: 0.95em;
+	color: #333;
+}
+
+#gallery a:hover{
+	opacity: 0.6;
+}
+
+#gallery img {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 5px;
+}
+
+/***************
+PAGE: ABOUT
+***************/
+
+.description {
+	max-width: 450px;
+	margin: 0px auto;
+}
+
+/***************
+FOOTER
+***************/
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;
+	padding-top: 5%;
+	padding-bottom: 3%;
+	color: #ffffff;
+}
+
+.social-icon {
+	margin: 1px 1px;
+}
+
+footer a, footer a:visited {
+	color: #ffffff;
+}
+
+footer a:hover {
+	color: #cccccc;
+	text-decoration: none;
+}
+
+/***************
+FOR TABLET DISPLAYS
+***************/
+
+@media screen and (min-width: 480px) {
+
+	/***************
+	PAGE: PORTFOLIO
+	***************/
+	#gallery li {
+		width: 45%;
+	}
+
+	#gallery li:nth-child(3n+1) {
+		clear: none;
+	}
+
+	#gallery li:nth-child(2n+1) {
+		clear: left;
+	}
+
+	.flash {
+		height: 320px;
+		width: 440px;
+	}
+
+}
+
+/***************
+FOR DESKTOP DISPLAYS
+***************/
+
+@media screen and (min-width: 700px) {
+
+	/***************
+	PAGE: PORTFOLIO
+	***************/
+
+	#gallery li {
+		width: 28.3333%;
+	}
+
+	#gallery li:nth-child(2n+1) {
+		clear: none;
+	}
+
+	#gallery li:nth-child(3n+1) {
+		clear: left;
+	}
+
+	.flash {
+		height: 400px;
+		width: 550px;
+	}
+}
