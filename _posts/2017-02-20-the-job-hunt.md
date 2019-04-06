@@ -42,7 +42,7 @@ In addition, I tried to find companies that were solving interesting problems. H
 
 ## Time
 
-I spent 3150 minutes = 131.25 hours in interviews. Of those,
+I spent 53 hours in interviews. Of those,
 - 8 hours were online technical interviews (e.g. HackerRank)
 - 12 hours were phone technical interviews (e.g. working through a problem with a future team mate)
 - 19.5 hours were on-site interviews
