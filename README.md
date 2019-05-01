@@ -13,7 +13,7 @@ This is my personal website. It uses the Jekyll to generate a static website and
 1. `bundle exec jekyll serve` to run the project on `localhost:4000` (this reruns automatically as changes are made, except changes to `_config.yml`)
 2. View in browser at `localhost:4000`
 3. Make changes - on new pages, be sure to reference the layouts to see what page variables are needed
-4. `git push` to this project makes it live in production
+4. `JEKYLL_ENV=production bundle exec jekyll serve` makes it ready for production
 
 ## 4. Discussion and references.
 
