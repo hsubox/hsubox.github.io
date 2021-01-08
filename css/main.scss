@@ -65,6 +65,17 @@ a:hover {
 	clear: left;
 }
 
+.swiggle {
+	&:before {
+		content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+	}
+	padding: 0 0 10px;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+    text-decoration-style: wavy;
+    text-decoration-color: #ffffff;
+}
+
 /***************
 NAVIGATION
 ***************/
